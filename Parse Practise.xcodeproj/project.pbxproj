@@ -30,6 +30,7 @@
 		1DD087351B2D838700B37D2D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD087341B2D838700B37D2D /* libsqlite3.dylib */; };
 		1DD087371B2D83A500B37D2D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD087361B2D83A500B37D2D /* Accounts.framework */; };
 		1DD087391B2D83AC00B37D2D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD087381B2D83AC00B37D2D /* Social.framework */; };
+		1DD0873F1B2D84CB00B37D2D /* AddDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0873E1B2D84CB00B37D2D /* AddDataViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		1DD087341B2D838700B37D2D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1DD087361B2D83A500B37D2D /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1DD087381B2D83AC00B37D2D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1DD0873D1B2D84CB00B37D2D /* AddDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDataViewController.h; sourceTree = "<group>"; };
+		1DD0873E1B2D84CB00B37D2D /* AddDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDataViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +148,7 @@
 			children = (
 				1DD086B71B2C695000B37D2D /* AppDelegate.h */,
 				1DD086B81B2C695000B37D2D /* AppDelegate.m */,
-				1DD087131B2D814400B37D2D /* DataTableViewController.h */,
-				1DD087141B2D814400B37D2D /* DataTableViewController.m */,
+				1DD087401B2D84D000B37D2D /* Data */,
 				1DD086C01B2C695000B37D2D /* Main.storyboard */,
 				1DD086C31B2C695000B37D2D /* Images.xcassets */,
 				1DD086C51B2C695000B37D2D /* LaunchScreen.xib */,
@@ -180,6 +182,17 @@
 				1DD086D11B2C695000B37D2D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DD087401B2D84D000B37D2D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1DD087131B2D814400B37D2D /* DataTableViewController.h */,
+				1DD087141B2D814400B37D2D /* DataTableViewController.m */,
+				1DD0873D1B2D84CB00B37D2D /* AddDataViewController.h */,
+				1DD0873E1B2D84CB00B37D2D /* AddDataViewController.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD0873F1B2D84CB00B37D2D /* AddDataViewController.m in Sources */,
 				1DD086B91B2C695000B37D2D /* AppDelegate.m in Sources */,
 				1DD087151B2D814400B37D2D /* DataTableViewController.m in Sources */,
 				1DD086B61B2C695000B37D2D /* main.m in Sources */,

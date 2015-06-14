@@ -8,6 +8,8 @@
 
 #import "DataTableViewController.h"
 
+#import <Parse/Parse.h>
+
 @interface DataTableViewController ()
 
 @property (nonatomic) NSArray *data;
@@ -16,14 +18,33 @@
 
 @implementation DataTableViewController
 
+@synthesize data;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"MemberData"];
+    
+    //[query whereKey:@"playerName" equalTo:@"Dan Stemkoski"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            data = objects;
+            [self.tableView reloadData];
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
 }
 
 #pragma mark - Table view data source
@@ -33,14 +54,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.data.count;
+    return data.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    
+    cell.textLabel.text = data[indexPath.row][@"name"];
+    cell.detailTextLabel.text = data[indexPath.row][@"phoneNumber"];
     
     return cell;
 }
