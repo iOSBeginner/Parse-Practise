@@ -10,11 +10,11 @@
 		1DD086B61B2C695000B37D2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD086B51B2C695000B37D2D /* main.m */; };
 		1DD086B91B2C695000B37D2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD086B81B2C695000B37D2D /* AppDelegate.m */; };
 		1DD086BC1B2C695000B37D2D /* Parse_Practise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DD086BA1B2C695000B37D2D /* Parse_Practise.xcdatamodeld */; };
-		1DD086BF1B2C695000B37D2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD086BE1B2C695000B37D2D /* ViewController.m */; };
 		1DD086C21B2C695000B37D2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD086C01B2C695000B37D2D /* Main.storyboard */; };
 		1DD086C41B2C695000B37D2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD086C31B2C695000B37D2D /* Images.xcassets */; };
 		1DD086C71B2C695000B37D2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD086C51B2C695000B37D2D /* LaunchScreen.xib */; };
 		1DD086D31B2C695000B37D2D /* Parse_PractiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD086D21B2C695000B37D2D /* Parse_PractiseTests.m */; };
+		1DD087151B2D814400B37D2D /* DataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD087141B2D814400B37D2D /* DataTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +34,14 @@
 		1DD086B71B2C695000B37D2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1DD086B81B2C695000B37D2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1DD086BB1B2C695000B37D2D /* Parse_Practise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Parse_Practise.xcdatamodel; sourceTree = "<group>"; };
-		1DD086BD1B2C695000B37D2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1DD086BE1B2C695000B37D2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1DD086C11B2C695000B37D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DD086C31B2C695000B37D2D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DD086C61B2C695000B37D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1DD086CC1B2C695000B37D2D /* Parse PractiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parse PractiseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD086D11B2C695000B37D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DD086D21B2C695000B37D2D /* Parse_PractiseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_PractiseTests.m; sourceTree = "<group>"; };
+		1DD087131B2D814400B37D2D /* DataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTableViewController.h; sourceTree = "<group>"; };
+		1DD087141B2D814400B37D2D /* DataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +85,8 @@
 			children = (
 				1DD086B71B2C695000B37D2D /* AppDelegate.h */,
 				1DD086B81B2C695000B37D2D /* AppDelegate.m */,
-				1DD086BD1B2C695000B37D2D /* ViewController.h */,
-				1DD086BE1B2C695000B37D2D /* ViewController.m */,
+				1DD087131B2D814400B37D2D /* DataTableViewController.h */,
+				1DD087141B2D814400B37D2D /* DataTableViewController.m */,
 				1DD086C01B2C695000B37D2D /* Main.storyboard */,
 				1DD086C31B2C695000B37D2D /* Images.xcassets */,
 				1DD086C51B2C695000B37D2D /* LaunchScreen.xib */,
@@ -223,8 +223,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DD086B91B2C695000B37D2D /* AppDelegate.m in Sources */,
+				1DD087151B2D814400B37D2D /* DataTableViewController.m in Sources */,
 				1DD086B61B2C695000B37D2D /* main.m in Sources */,
-				1DD086BF1B2C695000B37D2D /* ViewController.m in Sources */,
 				1DD086BC1B2C695000B37D2D /* Parse_Practise.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +420,7 @@
 				1DD086D81B2C695000B37D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DD086D91B2C695000B37D2D /* Build configuration list for PBXNativeTarget "Parse PractiseTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +429,7 @@
 				1DD086DB1B2C695000B37D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
